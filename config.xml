@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:tizen="http://tizen.org/ns/widgets" 
+        id="http://netmirror.tv/NetMirrorTV" 
+        version="1.0.0" 
+        height="1080" 
+        width="1920">
+    <tizen:application id="u0vY9O2y6L.NetMirrorTV" package="u0vY9O2y6L" required_version="3.0"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/tv.app.default"/>
+    <icon src="icon.png"/>
+    <name>NetMirrorTV</name>
+    <description>NetMirrorTV Smart TV Application for Samsung Tizen OS</description>
+
+    <!-- Tizen Privileges -->
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tvinputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/avplay"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+
+    <!-- Access controls -->
+    <access origin="*" subdomains="true"/>
+
+    <!-- Profile setting -->
+    <tizen:profile name="tv-samsung"/>
+    
+    <!-- Setting TV mode -->
+    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto"/>
+</widget>
